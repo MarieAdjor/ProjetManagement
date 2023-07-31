@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Reservation{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+		<div class="row page-titles">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item active">
+					<a href="javascript:void(0)">RESERVATION</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a href="javascript:void(0)">Nouvelle Reservation</a>
+				</li>
+			</ol>
+		</div>
+		<!-- row -->
+		<div class="row">
+			<div class="col-xl-8 col-lg-8">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="card-title">Ajout d'une Nouvelle Reservation.</h2>
+					</div>
+                    <div class="card-body">
+						<div class="input-primary">
+                            {{ include('reservation/_form.html.twig') }}
+                        </div>
+                        <br>
+						<div>
+							<p style="color:red">Pour voir le Total a payer pour la reservation veuillez vous rendre sur l'onglet Facture.Et le communiquer au client</p>
+							<a href="{{ path('app_reservation_index') }}">Retour à la Liste</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

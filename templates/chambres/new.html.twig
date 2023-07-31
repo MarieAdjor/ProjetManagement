@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Chambres{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+		<div class="row page-titles">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item active">
+					<a href="javascript:void(0)">CHAMBRE</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a href="javascript:void(0)">Nouvelle Chambre</a>
+				</li>
+			</ol>
+		</div>
+		<!-- row -->
+		<div class="row">
+			<div class="col-xl-8 col-lg-8">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="card-title">Ajout d'une Nouvelle Chambre.</h2>
+					</div>
+					<div class="card-body">
+						<div class="input-primary">
+							{{ include('chambres/_form.html.twig') }}
+						</div>
+                        <br>
+						<div>
+							<a href="{{ path('app_chambres_index') }}">Retour à la Liste</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

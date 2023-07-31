@@ -1,0 +1,72 @@
+ <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a class="" href="javascript:void()" aria-expanded="false">
+							<i class="fas fa-home"></i>
+							<span class="nav-text">TABLEAU DE BORD </span>
+						</a>
+                    </li>
+					
+                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						<i class="fas fa-info-circle"></i>
+							<span class="nav-text">Clients</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{path('app_clients_new')}}">Nouveau Client</a></li>
+							<li><a href="{{path('app_clients_index')}}">Liste des Clients</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+							<i class="fas fa-chart-line"></i>
+							<span class="nav-text">Chambres</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{path('app_chambres_new')}}">Nouvelle Chambre</a></li>
+                            <li><a href="{{path('app_chambres_index')}}">Liste des Chambres</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+							<i class="fab fa-bootstrap"></i>
+							<span class="nav-text">Reservation</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{path('app_reservation_new')}}">Nouvelle Reservation</a></li>
+                            <li><a href="{{path('app_reservation_index')}}">Liste des Reservations</a></li>
+                        </ul>
+                    </li>
+					<li><a class="" href="{{path('app_facture')}}" aria-expanded="false">
+							<i class="fas fa-home"></i>
+							<span class="nav-text">Factures</span>
+						</a>
+                    </li>
+                </ul>
+				<div class="side-bar-profile">
+					<div class="d-flex align-items-center justify-content-between mb-3">
+						<div class="side-bar-profile-img">
+							<img src="{{asset('images/user.jpg')}}" width="56" alt="">
+						</div>
+						<div class="profile-info1">
+							<h4 class="fs-18 font-w500">Gestion Hôtel.</h4>
+							<span>gestionhotem@gmail.com</span>
+						</div>
+						<div class="profile-button">
+							<i class="fas fa-caret-down scale5 text-light"></i>
+						</div>
+					</div>	
+					
+					
+				</div>
+				
+				<div class="copyright">
+					<p><strong>Projet Management IPNET</strong> © 2023 Tout droits reservé</p>
+					<p class="fs-12">Développé avec <span class="heart"></span> par ADM</p>
+				</div>
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
