@@ -1,0 +1,8 @@
+Application de gestion de réservation de chambre d'hôtel
+Cloner ce projet depuis git hub 
+Ouvrir le terminal sur le projet 
+Sur votre serveur local creer la base de donnée dbhotel(xamp)
+Depuis le terminal du projet exécuter la commande suivante pour faire les migrations:symfony console: d:m:m
+Démarrer le serveur local de l'application en tapant :symfony sever:start
+Ouvrir le navigateur et taper  l'adresse :localhost 8000 pour profiter des fonctionalités de cet 
+aplication 
